@@ -4,7 +4,13 @@ require('dotenv').config();
 const express = require('express');
 const app = express();
 
-const PORT = process.env.PORT || 3000;
+app.listen(5000, () => console.log('I am alive'));
+
+app.get('/ping', (request, response) => {
+  response.send('pong');
+});
+
+const PORT =  3000;
 
 app.use(express.static('./public'));
 
