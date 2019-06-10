@@ -1519,6 +1519,7 @@
 
 /* Header */
 
+
 	#header {
 		display: -moz-flex;
 		display: -webkit-flex;
@@ -1819,7 +1820,7 @@ table {
 			padding: 4em 0;
 			box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
 			text-align: center;
-			/* background-image: url("images/overlay.png"); */
+			background-image: url("images/overlay.png"); 
 		}
 
 			#main > section.dark {
@@ -1849,12 +1850,27 @@ table {
 				padding: 10em 0;
 				background-size: cover;
 				background-position: center center;
-			}
+      }
+      
+
+      /* Background Video Here */
+
+     
+
+      #myVideo {
+        position: absolute;
+        left: 0;
+        z-index: -1;
+        min-width: 100%;
+        bottom: 100px;
+        min-height: 100%;
+        width: 50%
+      }
+      
+    
 
 			#main > section.one {
-        background-color: #81918E;
-        opacity: .5;
-				/* background-image: url("https://images.unsplash.com/photo-1542740521-2b73fabba26a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");  */
+        
 			}
 
 			#main > section.two {
@@ -1871,7 +1887,7 @@ table {
 
 /* Wide */
 
-	@media screen and (min-width: 961px) and (max-width: 1880px) {
+	@media screen and (min-width: 500px) and (max-width: 1880px) {
 
 		/* Basic */
 
@@ -1901,7 +1917,7 @@ table {
 
 /* Normal */
 
-	@media screen and (min-width: 961px) and (max-width: 1620px) {
+	@media screen and (min-width: 500px) and (max-width: 1620px) {
 
 		/* Main */
 
@@ -1917,7 +1933,7 @@ table {
 
 /* Narrow */
 
-	@media screen and (min-width: 961px) and (max-width: 1320px) {
+	@media screen and (min-width: 500px) and (max-width: 1320px) {
 
 		/* Basic */
 
@@ -1988,7 +2004,7 @@ table {
 		display: none;
 	}
 
-	@media screen and (max-width: 960px) {
+	@media screen and (max-width: 500px) {
 
 		/* Basic */
 
@@ -2175,7 +2191,7 @@ table {
 
 /* Mobile */
 
-	@media screen and (max-width: 736px) {
+	@media screen and (max-width: 500px) {
 
 		/* Basic */
 
